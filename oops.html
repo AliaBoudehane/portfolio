@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Alia Boudehane's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main-2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 1500) { // Distance en px à partir de laquelle le bouton s'affiche
+                backToTopButton.style.display = "flex";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        backToTopButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    });
+</script>
+
+<body class="is-preload">
+
+   
+
+
+    <!-- First : Dashboard-->
+    <section id="first" class="main">
+        <header>
+            <div class="container">
+                <h2>404 - Page introuvable </h2>
+                <h2> Enquête en cours 🕵️‍♂️📊</h2>
+
+            </div>
+        </header>
+        <div class="content dark style1 featured">
+            <div class="container">
+                <span class="image featured"><img src="images/loupe.png" alt="" /></span>
+
+                <p>
+                    <br> Il semble que cette page se soit égarée dans le labyrinthe des données.
+                     <br>Alia, notre Data Detective est sur le coup pour la retrouver !
+                      <br>En attendant, pourquoi ne pas revenir à la page d'accueil ?
+                
+                    <footer>
+                        <section>
+                            <a href="index.html" class="button">Retour à la page principale</a>
+                        </section>
+    
+                    </footer>
+
+
+
+
+            </div>
+        </div>
+       
+    </section>
+
+
+
+    <!-- Footer -->
+    <section id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/AliaBoudehane" class="icon brands fa-github" target="_blank"><span
+                        class="label">GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/alia-boudehane" class="icon brands fa-linkedin"
+                    target="_blank"><span class="label">LinkedIn</span></a></li>
+            <li><a href="mailto:alia.boudehane@live.com" class="fa-regular fa-envelope"><span class="label"></span></a>
+            </li>
+            <li><a href="tel:+33759503230" class="fa-solid fa-phone"><span class="label"></span></a></li>
+        </ul>
+        <div class="copyright">
+            <ul class="menu">
+                <li>Copyright &copy; 2024 Dehanalyst - Tous droits réservés.</li>
+                <br><li> Photos Credits   <a href="https://unsplash.com/" class="icon brands fa-unsplash" target="_blank"><span
+                    class="label">GitHub</span></a>
+                    <a href="https://unsplash.com/" target="_blank">Unsplash</li>
+            </ul>
+        </div>
+        <!-- Bouton Remonter en Haut -->
+        <a href="#" class="back-to-top">
+            <i class="fa-solid fa-up-long"></i>
+            <span>Haut de page</span>
+        </a>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slideshow.js"></script>
+
+</body>
+
+</html>
