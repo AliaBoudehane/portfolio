@@ -1176,12 +1176,66 @@
 													</div>
 
 
-													<div
-														class="guten-element guten-button-wrapper guten-7f3nao hide-tablet hide-mobile">
-														<a class="guten-button guten-button-sm"
-														href="CV Data Analyst - Alia Boudehane.pdf" class="button"
-														download="CV Data Analyst - Alia Boudehane.pdf">Telecharger CV</a>
+													<div class="guten-element guten-button-wrapper guten-7f3nao hide-tablet hide-mobile menu-item menu-item-has-children">
+														<a class="guten-button guten-button-sm" href="#">Télécharger CV</a>
+														<ul class="sub-menu" style="display: none; position: absolute; top: 100%; left: 0; background-color: rgb(38,40,48); border: 1px solid rgb(30,32,40); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); z-index: 10; list-style: none; margin: 0; padding: 0;">
+															<li style="margin: 0; padding: 0; background-color: rgb(38,40,48);">
+																<a href="CV Data Analyst - Alia Boudehane.pdf" download="CV_Data_Analyst_Alia_Boudehane.pdf"
+																	style="display: block; padding: 8px 40px; color: white; text-decoration: none; white-space: nowrap; transition: color 0.3s;">
+																	CV Intéractif
+																</a>
+															</li>
+															<li style="margin: 0; padding: 0; background-color: rgb(38,40,48);">
+																<a href="CV Data Analyst Formel - Alia Boudehane.pdf" download="CV_Data_Scientist_Alia_Boudehane.pdf"
+																	style="display: block; padding: 8px 40px; color: white; text-decoration: none; white-space: nowrap; transition: color 0.3s;">
+																	CV Formel
+																</a>
+															</li>
+														</ul>
 													</div>
+													
+													<script>
+														// Activer le menu déroulant au survol
+														const menuWrapper = document.querySelector('.menu-item-has-children');
+														menuWrapper.addEventListener('mouseenter', () => {
+															const submenu = menuWrapper.querySelector('.sub-menu');
+															submenu.style.display = 'block';
+														});
+														menuWrapper.addEventListener('mouseleave', () => {
+															const submenu = menuWrapper.querySelector('.sub-menu');
+															submenu.style.display = 'none';
+														});
+													</script>
+													
+													<style>
+														/* Survol pour changer la couleur du texte en rgb(163,252,241) */
+														.sub-menu li a:hover {
+															color: rgb(163, 252, 241) !important;
+														}
+													
+														/* Assurer une transition fluide pour les changements de couleur */
+														.sub-menu li a {
+															transition: color 0.3s ease;
+														}
+													
+														/* Ajouter un peu de mise en forme pour éviter les conflits */
+														.menu-item-has-children > a {
+															display: inline-block;
+															color: white;
+															padding: 10px;
+															text-decoration: none;
+														}
+													
+														/* Gérer le fond des éléments du sous-menu */
+														.sub-menu li a {
+															display: block;
+															padding: 8px 40px;
+															color: white;
+															text-decoration: none;
+															background-color: rgb(38,40,48);
+														}
+													
+													</style>
 												</div>
 											</div>
 										</div>
