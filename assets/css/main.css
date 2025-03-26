@@ -619,6 +619,48 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Download CV in Hero Section
+--------------------------------------------------------------*/
+
+.button-container {
+  z-index: 10;
+  bottom: 10px;
+  left: 10px;
+}
+
+.download-btn {
+  background-color: rgb(1, 173, 173);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about .content h2 {

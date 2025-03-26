@@ -104,6 +104,7 @@
 
       <img src="assets/img/hero-2.png" alt="" data-aos="fade-in" class="">
 
+      
 
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -127,6 +128,33 @@
           I'm a <span class="typed" data-typed-items="Data Analyst, Teaching Assistant,  Project Mentor"></span><span
             class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
             class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+
+            <br><br>
+
+            <div class="button-container">
+              <button class="download-btn" onclick="toggleDropdown()">Télécharger le CV</button>
+              <div class="dropdown" id="dropdownMenu">
+                <a href="CV Data Analyst Formel - Alia Boudehane.pdf"
+                  download="CV Data Analyst Formel - Alia Boudehane.pdf">CV Formel</a>
+                <a href="CV Data Analyst - Alia Boudehane.pdf" download="CV Data Analyst - Alia Boudehane.pdf">CV
+                  Interactif</a>
+              </div>
+            </div>
+      
+            <script>
+              function toggleDropdown() {
+                var dropdown = document.getElementById("dropdownMenu");
+                dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+              }
+      
+              document.addEventListener("click", function (event) {
+                var button = document.querySelector(".download-btn");
+                var dropdown = document.getElementById("dropdownMenu");
+                if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                  dropdown.style.display = "none";
+                }
+              });
+            </script>
       </div>
 
     </section><!-- /Hero Section -->
@@ -1118,8 +1146,8 @@
                       <div class="portfolio-info">
                         <h4>Call Center</h4>
                         <p>Dashboard Only ∙ Power Bi </p>
-                        <a href="portfolio-PBI_Call_Center.html" title="More Details" class="details-link" target="_blank"
-                          rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-PBI_Call_Center.html" title="More Details" class="details-link"
+                          target="_blank" rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
@@ -1131,8 +1159,8 @@
                       <div class="portfolio-info">
                         <h4>RapidExpress Delivery</h4>
                         <p>Dashboard Only ∙ Looker </p>
-                        <a href="portfolio-Looker_RapidExpress_delivery.html" title="More Details" class="details-link" target="_blank"
-                          rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-Looker_RapidExpress_delivery.html" title="More Details" class="details-link"
+                          target="_blank" rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
@@ -1157,8 +1185,8 @@
                       <div class="portfolio-info">
                         <h4>Companies Sales</h4>
                         <p>Dashboard only ∙ Tableau </p>
-                        <a href="portfolio-Tableau_Companies_Sales.html" title="More Details" class="details-link" target="_blank"
-                          rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-Tableau_Companies_Sales.html" title="More Details" class="details-link"
+                          target="_blank" rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
@@ -1170,8 +1198,8 @@
                       <div class="portfolio-info">
                         <h4>Global World Data</h4>
                         <p>Dashboard only ∙ Looker </p>
-                        <a href="portfolio-Looker_Global_World.html" title="More Details" class="details-link" target="_blank"
-                          rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-Looker_Global_World.html" title="More Details" class="details-link"
+                          target="_blank" rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
@@ -1183,8 +1211,8 @@
                       <div class="portfolio-info">
                         <h4>Japan Sales</h4>
                         <p>Dashboard only ∙ Looker </p>
-                        <a href="portfolio-Looker_Japan_Sales.html" title="More Details" class="details-link" target="_blank"
-                          rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-Looker_Japan_Sales.html" title="More Details" class="details-link"
+                          target="_blank" rel="noopener noreferrer"><i class="bi bi-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
